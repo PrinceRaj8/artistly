@@ -64,13 +64,13 @@ export default function HomePage() {
                 key={i}
                 className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden"
               >
-                <div className="grid grid-cols-1 gap-1">
+                <div className="grid grid-cols-2 gap-1">
                   {cat.images.map((url, j) => (
                     <img
                       key={j}
                       src={url}
                       alt={`${cat.title} ${j + 1}`}
-                      className="w-full h-32 object-cover"
+                      className="w-full h-40 object-cover rounded hover:scale-105 transition-transform duration-200"
                     />
                   ))}
                 </div>

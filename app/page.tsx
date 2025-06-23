@@ -4,23 +4,35 @@ import Footer from "@/components/Footer";
 const categories = [
   {
     title: "Singers",
-    image:
-      "https://images.unsplash.com/photo-1525186402429-5ee9c96407ea?auto=format&fit=crop&w=400&q=80"
+    images: [
+      "/images/singer1.jpg", "/images/singer2.jpg", "/images/singer3.jpg",
+      "/images/singer4.jpg", "/images/singer5.jpg", "/images/singer6.jpg",
+      "/images/singer7.jpg", "/images/singer8.jpg", "/images/singer9.jpg",
+      "/images/singer10.jpg"
+    ]
   },
   {
     title: "Dancers",
-    image:
-      "https://images.unsplash.com/photo-1504198458649-3128b932f49b?auto=format&fit=crop&w=400&q=80"
+    images: [
+      "/images/dancer1.jpg", "/images/dancer2.jpg", "/images/dancer3.jpg",
+      "/images/dancer4.jpg", "/images/dancer5.jpg", "/images/dancer6.jpg",
+      "/images/dancer7.jpg", "/images/dancer8.jpg", "/images/dancer9.jpg",
+      "/images/dancer10.jpg"
+    ]
   },
   {
     title: "Speakers",
-    image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1a4a669?auto=format&fit=crop&w=400&q=80"
+    images: [
+      "/images/speaker1.jpg", "/images/speaker2.jpg", "/images/speaker3.jpg",
+      "/images/speaker4.jpg", "/images/speaker5.jpg"
+    ]
   },
   {
     title: "DJs",
-    image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80"
+    images: [
+      "/images/dj1.jpg", "/images/dj2.jpg", "/images/dj3.jpg",
+      "/images/dj4.jpg", "/images/dj5.jpg", "/images/dj6.jpg"
+    ]
   }
 ];
 
@@ -50,11 +62,20 @@ export default function HomePage() {
             {categories.map((cat, i) => (
               <div
                 key={i}
-                className="rounded-lg overflow-hidden shadow hover:shadow-md transition"
+                className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden"
               >
-                <img src={cat.image} alt={cat.title} className="w-full h-40 object-cover" />
+                <div className="grid grid-cols-1 gap-1">
+                  {cat.images.map((url, j) => (
+                    <img
+                      key={j}
+                      src={url}
+                      alt={`${cat.title} ${j + 1}`}
+                      className="w-full h-32 object-cover"
+                    />
+                  ))}
+                </div>
                 <div className="p-4 text-center">
-                  <h4 className="text-lg font-medium">{cat.title}</h4>
+                  <h4 className="text-lg font-semibold">{cat.title}</h4>
                 </div>
               </div>
             ))}

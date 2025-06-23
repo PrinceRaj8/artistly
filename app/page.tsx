@@ -1,14 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Utility to get truly random picsum images (changes on every refresh)
 const getRandomPicsum = (query: string, count: number) =>
   Array.from({ length: count }, () => `https://picsum.photos/400/300?random=${Math.floor(Math.random() * 10000)}`);
 
 const categories = [
   {
     title: "Singers",
-    images: getRandomPicsum("singer", 6) // changes every reload
+    images: getRandomPicsum("singer", 6)
   },
   {
     title: "Dancers",
@@ -21,7 +20,7 @@ const categories = [
   },
   {
     title: "Speakers",
-    images: getRandomPicsum("speaker", 4) // changes every reload
+    images: getRandomPicsum("speaker", 4)
   },
   {
     title: "DJs",
@@ -37,7 +36,6 @@ export default function HomePage() {
     <>
       <Header />
       <main className="p-4 max-w-6xl mx-auto">
-        {/* Hero Section */}
         <section className="text-center py-12">
           <h2 className="text-4xl font-bold mb-4">Welcome to Artistly.com</h2>
           <p className="text-gray-600 mb-6">
@@ -51,15 +49,11 @@ export default function HomePage() {
           </a>
         </section>
 
-        {/* Categories Section */}
         <section className="mt-10">
           <h3 className="text-2xl font-semibold mb-6">Popular Categories</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {categories.map((cat, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden"
-              >
+              <div key={i} className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
                 <div className="grid grid-cols-2 gap-1">
                   {cat.images.map((url, j) => (
                     <img

@@ -1,5 +1,5 @@
 // app/layout.tsx
-import './globals.css';
+import '../styles/globals.css'; // ✅ Correct path to Tailwind CSS
 
 export const metadata = {
   title: "Artistly - Book Your Performer",

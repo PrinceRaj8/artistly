@@ -1,15 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Utility to get truly random picsum images (changes on every refresh)
+const getRandomPicsum = (query: string, count: number) =>
+  Array.from({ length: count }, () => `https://picsum.photos/400/300?random=${Math.floor(Math.random() * 10000)}`);
+
 const categories = [
   {
     title: "Singers",
-    images: [
-      "/images/singer1.jpg", "/images/singer2.jpg", "/images/singer3.jpg",
-      "/images/singer4.jpg", "/images/singer5.jpg", "/images/singer6.jpg",
-      "/images/singer7.jpg", "/images/singer8.jpg", "/images/singer9.jpg",
-      "/images/singer10.jpg"
-    ]
+    images: getRandomPicsum("singer", 6) // changes every reload
   },
   {
     title: "Dancers",
@@ -22,10 +21,7 @@ const categories = [
   },
   {
     title: "Speakers",
-    images: [
-      "/images/speaker1.jpg", "/images/speaker2.jpg", "/images/speaker3.jpg",
-      "/images/speaker4.jpg", "/images/speaker5.jpg"
-    ]
+    images: getRandomPicsum("speaker", 4) // changes every reload
   },
   {
     title: "DJs",

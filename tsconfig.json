@@ -14,9 +14,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": ".",             // ✅ Important
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]            // ✅ Root-level alias fix
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

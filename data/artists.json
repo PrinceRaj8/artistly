@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Arijit Singh",
+    "category": "Singers",
+    "location": "Mumbai",
+    "price": "₹1L - ₹3L"
+  },
+  {
+    "id": 2,
+    "name": "Nora Fatehi",
+    "category": "Dancers",
+    "location": "Delhi",
+    "price": "₹2L - ₹4L"
+  },
+  {
+    "id": 3,
+    "name": "Chetan Bhagat",
+    "category": "Speakers",
+    "location": "Bangalore",
+    "price": "₹50K - ₹1L"
+  },
+  {
+    "id": 4,
+    "name": "DJ Snake",
+    "category": "DJs",
+    "location": "Goa",
+    "price": "₹3L+"
+  }
+]

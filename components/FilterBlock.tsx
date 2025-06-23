@@ -3,9 +3,9 @@ interface Props {
   setSelectedCategory: (value: string) => void;
 }
 
-export default function FilterBlock({ selectedCategory, setSelectedCategory }: Props) {
-  const categories = ["All", "Singers", "Dancers", "Speakers", "DJs"];
+const categories = ["All", "Singer", "Dancer", "Speaker", "DJ"];
 
+export default function FilterBlock({ selectedCategory, setSelectedCategory }: Props) {
   return (
     <div className="flex gap-2 flex-wrap mb-6">
       {categories.map((cat) => (

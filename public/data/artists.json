@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "DJ Prince",
+    "category": "DJ",
+    "location": "Delhi",
+    "image": "/images/dj1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ayesha Khan",
+    "category": "Dancer",
+    "location": "Mumbai",
+    "image": "/images/dancer2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "MC Ria",
+    "category": "Speaker",
+    "location": "Hyderabad",
+    "image": "/images/speaker1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Rahul Verma",
+    "category": "Singer",
+    "location": "Lucknow",
+    "image": "/images/singer3.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tanya Bansal",
+    "category": "Dancer",
+    "location": "Chandigarh",
+    "image": "/images/dancer4.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Neha Grover",
+    "category": "Singer",
+    "location": "Bangalore",
+    "image": "/images/singer4.jpg"
+  }
+]

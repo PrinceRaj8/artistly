@@ -2,10 +2,26 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const categories = [
-  { title: "Singers", image: "https://source.unsplash.com/400x300/?singer" },
-  { title: "Dancers", image: "https://source.unsplash.com/400x300/?dancer" },
-  { title: "Speakers", image: "https://source.unsplash.com/400x300/?speaker" },
-  { title: "DJs", image: "https://source.unsplash.com/400x300/?dj" },
+  {
+    title: "Singers",
+    image:
+      "https://images.unsplash.com/photo-1525186402429-5ee9c96407ea?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    title: "Dancers",
+    image:
+      "https://images.unsplash.com/photo-1504198458649-3128b932f49b?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    title: "Speakers",
+    image:
+      "https://images.unsplash.com/photo-1583337130417-3346a1a4a669?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    title: "DJs",
+    image:
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80"
+  }
 ];
 
 export default function HomePage() {
